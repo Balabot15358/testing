@@ -2,21 +2,23 @@ package org.firstinspires.ftc.teamcode;
 
 public class PIDController {
 
-    // Create proportional value
+    // Create proportional gain
     public double P;
-    // Create integral value
+    // Create integral gain
     public double I;
-    // Create derivative value
+    // Create derivative gain
     public double D;
+
+    // Setting all data and creating the ability to retrieve data
 
     /**
      * This is weirded in a weird way but whatever:
-     * Takes in the class P, I, and D values and makes them public class variables to get all data for
+     * Takes in the class P, I, and D gains and makes them public class variables to get all data for
      * created objects
      *
-     * @param p The proportional value given by user
-     * @param i The integral value given by user
-     * @param d The derivative value given by user
+     * @param p The proportional gain given by user
+     * @param i The integral gain given by user
+     * @param d The derivative gain given by user
      * @return null
      */
     public PIDController(double p, double i, double d){
@@ -26,9 +28,9 @@ public class PIDController {
     }
 
     /**
-     * Set class P value alone
+     * Set class P gain alone
      *
-     * @param p The proportional value given by user
+     * @param p The proportional gain given by user
      * @return null
      */
     public void setP(double p){
@@ -36,9 +38,9 @@ public class PIDController {
     }
 
     /**
-     * Set class I value alone
+     * Set class I gain alone
      *
-     * @param i The integral value given by user
+     * @param i The integral gain given by user
      * @return null
      */
     public void setI(double i){
@@ -46,9 +48,9 @@ public class PIDController {
     }
 
     /**
-     * Set class D value alone
+     * Set class D gain alone
      *
-     * @param d The derivative value given by user
+     * @param d The derivative gain given by user
      * @return null
      */
     public void setD(double d){
@@ -56,31 +58,37 @@ public class PIDController {
     }
 
     /**
-     * Returns class P value to use in other classes for some reason
+     * Returns class P gain to use in other classes for some reason
      *
-     * @return The class proportional value
+     * @return The class proportional gain
      */
     public double getP(){
         return P;
     }
 
     /**
-     * Returns class I value to use in other classes for some reason
+     * Returns class I gain to use in other classes for some reason
      *
-     * @return The class integral value
+     * @return The class integral gain
      */
     public double getI(){
         return I;
     }
 
     /**
-     * Returns class D value to use in other classes for some reason
+     * Returns class D gain to use in other classes for some reason
      *
-     * @return The class derivative value
+     * @return The class derivative gain
      */
     public double getD(){
         return D;
     }
+
+    // Calculate all data needed by user
+
+
+
+
 
 }
 
